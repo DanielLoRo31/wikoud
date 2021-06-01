@@ -1,0 +1,31 @@
+
+@import '../../../assets/scss/vars';
+
+.section-container {
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.text-container {
+  min-height: 40vh;
+  text-align: center;
+  h3 {
+    color: $color-primary-green;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font: {
+      weight: 400;
+    }
+  }
+
+  p {
+    font: {
+      size: 18px;
+      weight: 400;
+    }
+  }
+}

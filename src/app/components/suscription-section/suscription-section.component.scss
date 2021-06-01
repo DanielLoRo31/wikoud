@@ -1,0 +1,44 @@
+.section-container {
+  background: {
+    color: black;
+    image: url('../../../assets/img/computer-background-2.jpg');
+    repeat: no-repeat;
+    position: center;
+    size: 100% auto;
+  }
+
+  ;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.content-container {
+  background-color: rgba(105, 105, 105, 0.705);
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.form-container {
+  width: 550px;
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 18px 13px 62px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 18px 13px 62px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 18px 13px 62px -14px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  h1 {
+    font: {
+      size: 35px;
+      weight: 400;
+    }
+  }
+
+  p {
+    margin: {
+      bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../../assets/scss/vars';
+
+
+.button-container {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.button-class {
+  display: block;
+  background-color: $color-primary-green;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 30px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.button-class:hover {
+  opacity: .9;
+}
+
+.button-class:active {
+  opacity: 1;
+}

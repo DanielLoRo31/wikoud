@@ -1,0 +1,59 @@
+@import '../../../assets/scss/vars';
+
+.item-container {
+  cursor: pointer;
+  transition: .2s;
+  transform: scale(1);
+}
+
+.item-container:hover {
+  transform: scale(1.1);
+}
+
+.circle {
+  position: relative;
+  width: 250px;
+  display: block;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background: {
+      color: $color-secondary-green;
+      size: auto 100%;
+      position: center;
+    }
+  }
+}
+
+.circle::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.text-container {
+  text-align: center;
+  h1 {
+    margin-top: 10px;
+    font: {
+      weight: 400;
+      size: 30px;
+    }
+  }
+
+  h3 {
+    font: {
+      weight: 500;
+      size: 25px;
+    }
+    color: $color-primary-green
+  }
+}

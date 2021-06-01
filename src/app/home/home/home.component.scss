@@ -1,0 +1,29 @@
+@import '../../../assets/scss/vars';
+
+.all-containers {
+  background-color: black;
+  // width: 100vw;
+  // height: 100vh;
+  // box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: none;
+}
+
+
+.all-containers::-webkit-scrollbar {
+  // width: 5px;
+  display: none;
+}
+
+
+.all-containers::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+.all-containers::-webkit-scrollbar-thumb {
+  background: $color-primary-white; 
+}
+
+.all-containers::-webkit-scrollbar-thumb:hover {
+  background: $color-primary-green; 
+}

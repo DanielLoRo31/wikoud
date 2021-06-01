@@ -1,0 +1,54 @@
+@import '../../../assets/scss/vars';
+
+.section-container {
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.text-container {
+  min-height: 50vh;
+
+  p {
+    color: black;
+    text-align: center;
+
+    font: {
+      size: 30px;
+      weight: 400;
+    }
+
+    span {
+      font: {
+        weight: 500;
+      }
+
+      color: $color-secondary-green;
+    }
+  }
+}
+
+hr {
+  margin: 0px;
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: $color-secondary-green;
+  opacity: 1;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.area-container {
+  min-height: calc(50vh - 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: {
+    left: 10px;
+    right: 10px;
+  };
+}

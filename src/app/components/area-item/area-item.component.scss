@@ -1,0 +1,79 @@
+@import '../../../assets/scss/vars';
+
+.item-container {
+  width: 100%;
+  cursor: pointer;
+  transition: .2s;
+  transform: scale(1);
+  .image {
+    transition: .2s;
+  }
+  .text-container {
+    h1 {
+      transition: .2s;
+    }
+  }
+  
+}
+
+.item-container:hover {
+  transform: scale(1.2);
+  .image {
+    background-color: $color-secondary-green;
+  }
+  .text-container {
+    h1 {
+      color: $color-secondary-green;
+    }
+  }
+}
+
+.text-container {
+  text-align: center;
+  h1 {
+    margin: {
+      top: 15px;
+    }
+    font: {
+      size: 22px;
+      weight: 500;
+    }
+    color: $color-primary-green;
+    // color: $color-secondary-green;
+  }
+
+  p {
+    font: {
+      size: 15px;
+      weight: 400;
+    }
+  }
+}
+
+.circle {
+  display: block;
+  margin: {
+    left: auto;
+    right: auto;
+  };
+  position: relative;
+  width: 100px;
+  
+}
+
+.circle::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.image {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: $color-primary-green;
+  border-radius: 50%;
+
+}

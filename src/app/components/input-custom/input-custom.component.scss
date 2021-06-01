@@ -1,0 +1,54 @@
+.input-container  {
+  background-color: #c9c9c9;
+  // height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: {
+    bottom: 20px;
+  }
+
+  cursor: text;
+  padding: {
+    left: 10px;
+    right: 10px
+  };
+
+  img {
+    width: 25px;
+    margin: {
+      right: 10px;
+    }
+  }
+
+  input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: {
+      top: 5px;
+      bottom: 5px
+    };
+  }
+
+  textarea {
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: {
+      top: 5px;
+      bottom: 5px
+    };
+  }
+}
+
+.input-container:focus-within,
+.input-container:active
+ {
+  border: 1px solid black
+}
