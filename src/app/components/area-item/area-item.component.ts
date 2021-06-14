@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-area-item',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-item.component.scss']
 })
 export class AreaItemComponent implements OnInit {
+  @Input() title: string;
+  @Input() description: string;
+  @Input() img: string;
 
   constructor() { }
 

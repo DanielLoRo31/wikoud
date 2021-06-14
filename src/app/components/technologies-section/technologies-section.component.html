@@ -1,24 +1,32 @@
-<div class="wrapper">
-  <div class="container">
-    <!-- <h1>Welcome</h1>
-
-    <form class="form">
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
-      <button type="submit" id="login-button">Login</button>
-    </form> -->
+<div class="section-container">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col d-flex align-items-center justify-content-center">
+          <h1 data-aos="fade-down" data-aos-duration="2000">Tecnologías utilizadas</h1>
+        </div>
+      </div>
+      <div class="row mt-5 d-flex align-items-center justify-content-center">
+        <ng-container  *ngFor="let item of items">
+          <div class="col m-5 mb-5"></div>
+          <app-technology-item class="col mb-5" [img]="item.img"></app-technology-item>
+          <div class="col m-5 mb-5"></div>
+        </ng-container>
+        
+      </div>
+    </div>
+  
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </div>
-
-  <ul class="bg-bubbles">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
 </div>

@@ -10,6 +10,7 @@ import { AreaItemComponent } from './area-item/area-item.component';
 import { TeamItemComponent } from './team-item/team-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputCustomComponent } from './input-custom/input-custom.component';
+import { TechnologyItemComponent } from './technology-item/technology-item.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { InputCustomComponent } from './input-custom/input-custom.component';
     AreaItemComponent,
     TeamItemComponent,
     InputCustomComponent,
+    TechnologyItemComponent,
   ],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   exports: [

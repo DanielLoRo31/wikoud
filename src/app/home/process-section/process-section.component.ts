@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'app-description-section',
-  templateUrl: './description-section.component.html',
-  styleUrls: ['./description-section.component.scss']
+  selector: 'app-process-section',
+  templateUrl: './process-section.component.html',
+  styleUrls: ['./process-section.component.scss']
 })
-export class DescriptionSectionComponent implements OnInit {
-
+export class ProcessSectionComponent implements OnInit {
   ASSETS = environment.ASSETS_URL;
-
   constructor() { }
 
   ngOnInit(): void {

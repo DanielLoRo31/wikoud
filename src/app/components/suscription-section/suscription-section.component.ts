@@ -12,6 +12,7 @@ export class SuscriptionSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.initValues();
   }
 
   initValues() {
@@ -21,5 +22,11 @@ export class SuscriptionSectionComponent implements OnInit {
       phone: new FormControl('', [Validators.required]),
       reason: new FormControl('', [Validators.required]),
     })
+  }
+
+  submit() {
+    if (this.formGroup.valid) {
+      
+    }
   }
 }
