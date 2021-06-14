@@ -2,22 +2,23 @@
   <div class="content-container d-flex align-items-center justify-content-center">
     <div class="container-fluid">
       <div class="row h-100">
-        <div class="col-6 d-flex align-items-center justify-content-center">
+        <div class="col-12 d-flex align-items-center justify-content-center">
           <div data-aos="fade-up" data-aos-duration="2000" class="form-container" [formGroup]="formGroup">
-            <h1>Get Started Today</h1>
-            <p>Everything you need to grow your business.<br>Order our services today!</p>
+            <h1>¡ Empieza hoy !</h1>
+            <p>Envíanos un correo con tus datos <br>para poder agendar una cita.</p>
             <div class="input-container">
-              <app-input-custom [placeholder]="'Full Name'" formControlName="name"></app-input-custom>
-              <app-input-custom [placeholder]="'Email'" [type]="'email'"  formControlName="email"></app-input-custom>
-              <app-input-custom [placeholder]="'Phone Number'"  formControlName="phone"></app-input-custom>
-              <app-input-custom [placeholder]="'Contact Reason'" [type]="'area'"  formControlName="reason"></app-input-custom>
+              <app-input-custom [placeholder]="'Nombre Completo'" formControlName="name" [img]="this.ASSETS + '/img/iconos/user.png'"></app-input-custom>
+              <app-input-custom [placeholder]="'Correo'" [type]="'email'"  formControlName="email" [img]="this.ASSETS + '/img/iconos/email.png'"></app-input-custom>
+              <app-input-custom [placeholder]="'Número de Teléfono'"  formControlName="phone" [img]="this.ASSETS + '/img/iconos/phone.png'"></app-input-custom>
+              <app-input-custom [placeholder]="'Razón de contacto'" [type]="'area'"  formControlName="reason" [img]="this.ASSETS + '/img/iconos/user.png'"></app-input-custom>
             </div>
-            <app-button class="ml-auto" [text]="'Submit Now!'" [ml]="'auto'"></app-button>
+            <app-button class="ml-auto" [text]="'Enviar!'" [ml]="'auto'" (clickEvent)="submit($event)"></app-button>
           </div>
         </div>
-        <div class="col-6">
-
-        </div>
+        <!-- <div class="col-6">
+          <h1></h1>
+          <p></p>
+        </div> -->
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-suscription-section',
@@ -7,6 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./suscription-section.component.scss']
 })
 export class SuscriptionSectionComponent implements OnInit {
+
+  ASSETS = environment.ASSETS_URL;
 
   formGroup: FormGroup;
   constructor() { }
@@ -24,9 +27,12 @@ export class SuscriptionSectionComponent implements OnInit {
     })
   }
 
-  submit() {
+  submit($event) {
     if (this.formGroup.valid) {
-      
+      setTimeout(()=> {
+        this.formGroup.reset()
+      }, 500)
+      // console.log(this.formGroup.value)
     }
   }
 }
